@@ -1,0 +1,32 @@
+#stage {
+  width: 600px;
+  height: 600px;
+  background: transparent url('img/css_animation_exercise_stage.png') 0 0 no-repeat;
+  margin: 0 auto;
+  position: relative;
+}
+
+#hero {
+  width: 75px;
+  height: 75px;
+  border: 1px red dashed;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  animation-name: step1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes step1 {
+  from {
+    top: 10px;
+    left: 10px;
+  }
+  to {
+    top:10px;
+    left: 515px;
+  }
+}
