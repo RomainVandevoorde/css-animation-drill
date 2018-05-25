@@ -13,11 +13,13 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  animation-name: step1;
-  animation-duration: 2s;
+  /* animation-name: step1;
+  animation-duration: 5s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-fill-mode: forwards; */
+  animation:
+    step1 5s linear 0s 1 normal forwards,
+    step2 5s linear 5s 1 normal forwards;
 }
 
 @keyframes step1 {
@@ -29,4 +31,17 @@
     top:10px;
     left: 515px;
   }
+}
+
+@keyframes step2 {
+  from {
+    top: 10px;
+  }
+  to {
+    top: 200px;
+  }
+}
+
+@keyframes anim {
+
 }
