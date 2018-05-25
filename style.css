@@ -17,9 +17,10 @@
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-fill-mode: forwards; */
-  animation:
+  /* animation:
     step1 5s linear 0s 1 normal forwards,
-    step2 5s linear 5s 1 normal forwards;
+    step2 5s linear 5s 1 normal forwards; */
+  animation: anim 20s linear 0s infinite;
 }
 
 @keyframes step1 {
@@ -43,5 +44,33 @@
 }
 
 @keyframes anim {
-
+  0% {
+    left: 10px;
+  }
+  25% {
+    top:10px;
+    left: 515px;
+  }
+  50% {
+    top:200px;
+    left: 515px;
+    transform: rotate(0deg);
+  }
+  52.5%, 62.5% {
+    top: 200px;
+    left: 265px;
+    transform: rotate(45deg);
+  }
+  75% {
+    top: 200px;
+    left: 10px;
+    transform: rotate(0deg);
+    width: 75px;
+  }
+  100% {
+    top: 300px;
+    left: 450px;
+    width: 150px;
+    height: 150px;
+  }
 }
